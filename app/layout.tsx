@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import { AppProvider } from '@/context/AppContext';
-import AppShell from '@/components/AppShell';
+import AppContainer from '@/components/AppContainer';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const inter = Inter({
@@ -27,9 +27,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="id">
-      <body className={`bg-slate-900 flex justify-center items-center h-screen h-dvh m-0 p-0 overflow-hidden ${inter.className}`}>
+      <body className={`bg-slate-900 flex justify-center items-center h-dvh m-0 p-0 overflow-hidden ${inter.className}`}>
         <AppProvider>
-          <AppShell>{children}</AppShell>
+          <AppContainer>{children}</AppContainer>
         </AppProvider>
       </body>
     </html>

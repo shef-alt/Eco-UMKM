@@ -107,7 +107,7 @@ export default function UploadPage() {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center px-5 py-2">
-        <div className="w-full h-80 mt-8 mb-10 border-2 border-dashed border-gray-600 rounded-2xl relative overflow-hidden flex flex-col items-center justify-center bg-gray-800/80 shadow-inner">
+        <div className="w-full h-80 mt-8 mb-5 border-2 border-dashed border-gray-600 rounded-2xl relative overflow-hidden flex flex-col items-center justify-center bg-gray-800/80 shadow-inner">
           <i className="fas fa-camera text-2xl text-gray-500 mb-1"></i>
           <p className="text-gray-400 text-[11px] text-center px-4">Ketuk tombol putih di bawah untuk upload/kamera</p>
           {preview && (
