@@ -10,7 +10,7 @@ npm run dev      # http://localhost:3000
 npm run build && npm start   # mode production
 ```
 
-## Struktur
+## Struktur Utama
 
 ```
 app/
