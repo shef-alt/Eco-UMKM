@@ -2,6 +2,7 @@
 
 import { useApp } from '@/context/AppContext';
 import { formatRupiah } from '@/lib/utils';
+import WeeklyChart from '@/components/WeeklyChart';
 
 export default function StatsPage() {
   const { userEcoXP, totalRecycledKg, totalMarketplaceItemsSold, totalSaldo, navTo } = useApp();
@@ -48,6 +49,13 @@ export default function StatsPage() {
               {remainingXP} XP lagi ke Level {currentLevel + 1}
             </span>
           </div>
+        </div>
+
+        <div className="">
+        <h4 className="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3">
+          Grafik Jumlah Limbah Terproses Minggu Ini
+        </h4>
+          <WeeklyChart />
         </div>
 
         <h3 className="font-bold text-gray-800 mb-3 text-xs flex items-center">
