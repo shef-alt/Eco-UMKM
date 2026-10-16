@@ -1,6 +1,6 @@
 # Eco-UMKM Mobile App
 
-Eco-UMKM merupakan platform daur ulang & marketplace limbah UMKM. Framework menggunakan Next.js 14 + Tailwind CSS.
+Eco-UMKM merupakan platform daur ulang & marketplace limbah UMKM. Framework menggunakan Next.js 14 + Tailwind CSS. Website ini dirancang pada tampilan mobile dan masih dalam tahap prototype/simulasi sehingga fungsionalitas secara penuh masih belum terimplementasi. Untuk dapat mengakses via deployment dapat mengunjungi link deployment vercel berikut ini: eco-umkm.vercel.app
 
 ## Cara Run Program
 
@@ -26,7 +26,7 @@ app/
   stats/page.tsx        Statistik          /stats
   profile/page.tsx      Profil UMKM        /profile
 components/
-  AppShell.tsx          Container + bottom nav + semua modal
+  AppContainer.tsx      Container + bottom nav + semua modal
   modals/               All modal components: OptionSellModal, ProfileModal,  ActivityDetailModal, GlobalModal
 context/AppContext.tsx  All states & actions (saldo, xp, aktivitas, marketplace, simulasi tracking)
 lib/data.ts             Data bank sampah, produk awal, aktivitas awal, daftar pengepul
